@@ -3,10 +3,13 @@ class ConsoleApp1
 {
     public static void Main(string[] args)
     {
-        int total = 0;
+        Console.WriteLine(average(new []{1,9,2,8,3,8,4,7,6,5}));
+    }
+
+    static double average(int[] arr)
+    {
+        double total = 0;
         int count =0;
-        int[] arr = new[] { 1, 9, 2, 8, 3, 7, 4, 6, 5 };
-        
         for (int i = 0; i < arr.Length; i++)
         {
             total += arr[i];
@@ -15,15 +18,12 @@ class ConsoleApp1
 
         try
         {
-            Console.WriteLine("avg = " + total/count);
+            return total/count;
         }
         catch (ArithmeticException e)
         {
-            Console.WriteLine(total/1);
-
+            return total / 1;
         }
-        
-        
     }
 
     
