@@ -3,10 +3,10 @@ class ConsoleApp1
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine(average(new []{1,9,2,8,3,8,4,7,6,5}));
+        Console.WriteLine(Average(new []{1,9,2,8,3,8,4,7,6,5}));
     }
 
-    static double average(int[] arr)
+    static double Average(int[] arr)
     {
         double total = 0;
         int count =0;
